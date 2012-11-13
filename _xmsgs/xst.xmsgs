@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="790" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/usuariomac/Core_iDeivid/InstMemory_module.vhd</arg>&quot; line <arg fmt="%d" index="2">53</arg>: Index value(s) does not match array range, simulation mismatch.
+</msg>
+
+<msg type="info" file="Xst" num="1433" delta="new" >Contents of array &lt;<arg fmt="%s" index="1">instruction</arg>&gt; may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+</msg>
+
+<msg type="warning" file="Xst" num="647" delta="new" >Input &lt;<arg fmt="%s" index="1">address&lt;4&gt;</arg>&gt; is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+</msg>
+
+<msg type="warning" file="Xst" num="1781" delta="new" >Signal &lt;<arg fmt="%s" index="1">instruction</arg>&gt; is used but never assigned. Tied to default value.
+</msg>
+
+<msg type="info" file="Xst" num="3034" delta="new" >In order to maximize performance and save block RAM resources, the small ROM &lt;<arg fmt="%s" index="1">Mrom__varindex0000</arg>&gt; will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="new" >FF/Latch &lt;<arg fmt="%s" index="1">dataOut_29</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">0</arg> in block &lt;<arg fmt="%s" index="3">InstMemory_module</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataOut_18</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">InstMemory_module</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dataOut_19&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataOut_15</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">InstMemory_module</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dataOut_16&gt; </arg>
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="new" >The FF/Latch &lt;<arg fmt="%s" index="1">dataOut_4</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">InstMemory_module</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">8 FFs/Latches</arg>, which will be removed : <arg fmt="%s" index="4">&lt;dataOut_5&gt; &lt;dataOut_6&gt; &lt;dataOut_7&gt; &lt;dataOut_8&gt; &lt;dataOut_9&gt; &lt;dataOut_10&gt; &lt;dataOut_11&gt; &lt;dataOut_12&gt; </arg>
+</msg>
+
+</messages>
+

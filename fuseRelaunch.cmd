@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/usuariomac/Core_iDeivid/tbInstMemory_module_isim_beh.exe" -prj "C:/Users/usuariomac/Core_iDeivid/tbInstMemory_module_beh.prj" "work.tbInstMemory_module" 

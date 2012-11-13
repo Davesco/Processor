@@ -1,0 +1,26 @@
+Running: C:\Xilinx\13.2\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/usuariomac/Core_iDeivid/tbInstMemory_module_isim_beh.exe -prj C:/Users/usuariomac/Core_iDeivid/tbInstMemory_module_beh.prj work.tbInstMemory_module 
+ISim O.61xd (signature 0x6dd86d03)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/usuariomac/Core_iDeivid/InstMemory_module.vhd" into library work
+Parsing VHDL file "C:/Users/usuariomac/Core_iDeivid/tbInstMemory_module.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 96524 KB
+Fuse CPU Usage: 139 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package textio
+Compiling package numeric_bit
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling architecture behavioral of entity InstMemory_module [instmemory_module_default]
+Compiling architecture behavior of entity tbinstmemory_module
+Time Resolution for simulation is 1ps.
+Waiting for 3 sub-compilation(s) to finish...
+Compiled 10 VHDL Units
+Built simulation executable C:/Users/usuariomac/Core_iDeivid/tbInstMemory_module_isim_beh.exe
+Fuse Memory Usage: 120760 KB
+Fuse CPU Usage: 375 ms

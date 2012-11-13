@@ -1,0 +1,346 @@
+Release 13.2 - xst O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: InstMemory_module.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "InstMemory_module.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "InstMemory_module"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : InstMemory_module
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/usuariomac/Core_iDeivid/InstMemory_module.vhd" in Library work.
+Entity <instmemory_module> compiled.
+Entity <instmemory_module> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <InstMemory_module> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <InstMemory_module> in library <work> (Architecture <behavioral>).
+WARNING:Xst:790 - "C:/Users/usuariomac/Core_iDeivid/InstMemory_module.vhd" line 53: Index value(s) does not match array range, simulation mismatch.
+INFO:Xst:1433 - Contents of array <instruction> may be accessed with an index that exceeds the array size. This could cause simulation mismatch.
+Entity <InstMemory_module> analyzed. Unit <InstMemory_module> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <InstMemory_module>.
+    Related source file is "C:/Users/usuariomac/Core_iDeivid/InstMemory_module.vhd".
+WARNING:Xst:647 - Input <address<4>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1781 - Signal <instruction> is used but never assigned. Tied to default value.
+    Found 15x32-bit ROM for signal <$varindex0000> created at line 53.
+    Found 32-bit register for signal <dataOut>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred  32 D-type flip-flop(s).
+Unit <InstMemory_module> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 15x32-bit ROM                                         : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <InstMemory_module>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom__varindex0000> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <InstMemory_module> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 15x32-bit ROM                                         : 1
+# Registers                                            : 32
+ Flip-Flops                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <dataOut_29> (without init value) has a constant value of 0 in block <InstMemory_module>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <dataOut_18> in Unit <InstMemory_module> is equivalent to the following FF/Latch, which will be removed : <dataOut_19> 
+INFO:Xst:2261 - The FF/Latch <dataOut_15> in Unit <InstMemory_module> is equivalent to the following FF/Latch, which will be removed : <dataOut_16> 
+INFO:Xst:2261 - The FF/Latch <dataOut_4> in Unit <InstMemory_module> is equivalent to the following 8 FFs/Latches, which will be removed : <dataOut_5> <dataOut_6> <dataOut_7> <dataOut_8> <dataOut_9> <dataOut_10> <dataOut_11> <dataOut_12> 
+
+Optimizing unit <InstMemory_module> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block InstMemory_module, actual ratio is 0.
+FlipFlop dataOut_18 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop dataOut_15 has been replicated 1 time(s) to handle iob=true attribute.
+FlipFlop dataOut_4 has been replicated 8 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 31
+ Flip-Flops                                            : 31
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : InstMemory_module.ngr
+Top Level Output File Name         : InstMemory_module
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 39
+
+Cell Usage :
+# BELS                             : 22
+#      GND                         : 1
+#      LUT3                        : 2
+#      LUT4                        : 19
+# FlipFlops/Latches                : 31
+#      FDR                         : 31
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 37
+#      IBUF                        : 5
+#      OBUF                        : 32
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       11  out of   4656     0%  
+ Number of 4 input LUTs:                 21  out of   9312     0%  
+ Number of IOs:                          39
+ Number of bonded IOBs:                  38  out of    232    16%  
+    IOB Flip Flops:                      31
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clkFPGA                            | BUFGP                  | 31    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: 3.533ns
+   Maximum output required time after clock: 4.283ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clkFPGA'
+  Total number of paths / destination ports: 145 / 62
+-------------------------------------------------------------------------
+Offset:              3.533ns (Levels of Logic = 2)
+  Source:            address<1> (PAD)
+  Destination:       dataOut_0 (FF)
+  Destination Clock: clkFPGA rising
+
+  Data Path: address<1> to dataOut_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   1.218   1.303  address_1_IBUF (address_1_IBUF)
+     LUT4:I0->O            1   0.704   0.000  Mrom__varindex0000301 (Mrom__varindex000030)
+     FDR:D                     0.308          dataOut_30
+    ----------------------------------------
+    Total                      3.533ns (2.230ns logic, 1.303ns route)
+                                       (63.1% logic, 36.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clkFPGA'
+  Total number of paths / destination ports: 31 / 31
+-------------------------------------------------------------------------
+Offset:              4.283ns (Levels of Logic = 1)
+  Source:            dataOut_31 (FF)
+  Destination:       dataOut<31> (PAD)
+  Source Clock:      clkFPGA rising
+
+  Data Path: dataOut_31 to dataOut<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.591   0.420  dataOut_31 (dataOut_31)
+     OBUF:I->O                 3.272          dataOut_31_OBUF (dataOut<31>)
+    ----------------------------------------
+    Total                      4.283ns (3.863ns logic, 0.420ns route)
+                                       (90.2% logic, 9.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 3.00 secs
+Total CPU time to Xst completion: 3.33 secs
+ 
+--> 
+
+Total memory usage is 188316 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+
