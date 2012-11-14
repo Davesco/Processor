@@ -87,6 +87,9 @@ begin
 					when "110111" => ALUOP <= x"28";	--STDC
 					when "110101" => ALUOP <= x"29"; --STCSR
 					
+					when "111100" => ALUOP <= x"2A"; --SAVE
+					when "111101" => ALUOP <= x"2B";--restore
+					
 					when others => ALUOP <= x"00";
 				end case;
 			else

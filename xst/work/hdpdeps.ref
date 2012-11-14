@@ -1,4 +1,4 @@
-V3 12
+V3 15
 FL C:/Users/usuariomac/Core_iDeivid/CU_module.vhd 2012/11/08.09:48:43 O.61xd
 EN work/CU_module 1352386133 FL C:/Users/usuariomac/Core_iDeivid/CU_module.vhd \
       PB ieee/std_logic_1164 1308643377
@@ -13,6 +13,11 @@ EN work/InstMemory_module 1352131848 \
 AR work/InstMemory_module/Behavioral 1352131849 \
       FL C:/Users/usuariomac/Core_iDeivid/InstMemory_module.vhd \
       EN work/InstMemory_module 1352131848
+FL C:/Users/usuariomac/Core_iDeivid/MUX2_module.vhd 2012/11/11.00:31:35 O.61xd
+EN work/MUX2_module 1352611897 \
+      FL C:/Users/usuariomac/Core_iDeivid/MUX2_module.vhd PB ieee/std_logic_1164 1308643377
+AR work/MUX2_module/Behavioral 1352611898 \
+      FL C:/Users/usuariomac/Core_iDeivid/MUX2_module.vhd EN work/MUX2_module 1352611897
 FL C:/Users/usuariomac/Core_iDeivid/PC_module.vhd 2012/11/01.07:30:36 O.61xd
 EN work/PC_module 1352129561 FL C:/Users/usuariomac/Core_iDeivid/PC_module.vhd \
       PB ieee/std_logic_1164 1308643377
