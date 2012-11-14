@@ -1,9 +1,22 @@
-V3 15
-FL C:/Users/usuariomac/Core_iDeivid/CU_module.vhd 2012/11/08.09:48:43 O.61xd
-EN work/CU_module 1352386133 FL C:/Users/usuariomac/Core_iDeivid/CU_module.vhd \
+V3 20
+FL C:/Arquitectura/ALU_module.vhd 2012/11/14.11:15:09 O.61xd
+EN work/ALU_module 1352909719 FL C:/Arquitectura/ALU_module.vhd \
+      PB ieee/std_logic_1164 1308643377 PB ieee/NUMERIC_STD 1308643378 \
+      PB ieee/NUMERIC_BIT 1308643377 PB ieee/STD_LOGIC_UNSIGNED 1308643379
+AR work/ALU_module/Behavioral 1352909720 \
+      FL C:/Arquitectura/ALU_module.vhd EN work/ALU_module 1352909719
+EN work/CU_module 1352386133 FL C:/Arquitectura/CU_module.vhd \
       PB ieee/std_logic_1164 1308643377
 AR work/CU_module/Behavioral 1352386134 \
-      FL C:/Users/usuariomac/Core_iDeivid/CU_module.vhd EN work/CU_module 1352386133
+      FL C:/Arquitectura/CU_module.vhd EN work/CU_module 1352386133
+FL C:/Arquitectura/RegisterFile_module.vhd 2012/11/05.12:18:39 O.61xd
+EN work/RegisterFile_module 1352908671 FL C:/Arquitectura/RegisterFile_module.vhd \
+      PB ieee/std_logic_1164 1308643377 PB ieee/NUMERIC_STD 1308643378 \
+      PB std/TEXTIO 1308643377 PB ieee/NUMERIC_BIT 1308643377 \
+      PB ieee/STD_LOGIC_UNSIGNED 1308643379
+AR work/RegisterFile_module/Behavioral 1352908672 \
+      FL C:/Arquitectura/RegisterFile_module.vhd EN work/RegisterFile_module 1352908671
+FL C:/Users/usuariomac/Core_iDeivid/CU_module.vhd 2012/11/08.09:48:43 O.61xd
 FL C:/Users/usuariomac/Core_iDeivid/InstMemory_module.vhd 2012/11/05.11:03:09 O.61xd
 EN work/InstMemory_module 1352131848 \
       FL C:/Users/usuariomac/Core_iDeivid/InstMemory_module.vhd \
@@ -24,11 +37,3 @@ EN work/PC_module 1352129561 FL C:/Users/usuariomac/Core_iDeivid/PC_module.vhd \
 AR work/PC_module/Behavioral 1352129562 \
       FL C:/Users/usuariomac/Core_iDeivid/PC_module.vhd EN work/PC_module 1352129561
 FL C:/Users/usuariomac/Core_iDeivid/RegisterFile_module.vhd 2012/11/05.12:18:39 O.61xd
-EN work/RegisterFile_module 1352135922 \
-      FL C:/Users/usuariomac/Core_iDeivid/RegisterFile_module.vhd \
-      PB ieee/std_logic_1164 1308643377 PB ieee/NUMERIC_STD 1308643378 \
-      PB std/TEXTIO 1308643377 PB ieee/NUMERIC_BIT 1308643377 \
-      PB ieee/STD_LOGIC_UNSIGNED 1308643379
-AR work/RegisterFile_module/Behavioral 1352135923 \
-      FL C:/Users/usuariomac/Core_iDeivid/RegisterFile_module.vhd \
-      EN work/RegisterFile_module 1352135922

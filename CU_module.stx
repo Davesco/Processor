@@ -1,25 +1,30 @@
 Release 13.2 - xst O.61xd (nt)
 Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
---> Parameter TMPDIR set to C:/Users/usuariomac/Core_iDeivid/xst/projnav.tmp
+--> Parameter TMPDIR set to C:/Arquitectura/xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
---> Parameter xsthdpdir set to C:/Users/usuariomac/Core_iDeivid/xst
+--> Parameter xsthdpdir set to C:/Arquitectura/xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
 
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/usuariomac/Core_iDeivid/CU_module.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/CU_module is now defined in a different file.  It was defined in "C:/Users/usuariomac/Core_iDeivid/CU_module.vhd", and is now defined in "C:/Arquitectura/CU_module.vhd".
+WARNING:HDLParsers:3607 - Unit work/CU_module/Behavioral is now defined in a different file.  It was defined in "C:/Users/usuariomac/Core_iDeivid/CU_module.vhd", and is now defined in "C:/Arquitectura/CU_module.vhd".
+Compiling vhdl file "C:/Arquitectura/CU_module.vhd" in Library work.
 Entity <cu_module> compiled.
-Entity <cu_module> (Architecture <behavioral>) compiled.
+ERROR:HDLParsers:3312 - "C:/Arquitectura/CU_module.vhd" Line 60. Undefined symbol 'x'.
+ERROR:HDLParsers:1209 - "C:/Arquitectura/CU_module.vhd" Line 60. x: Undefined symbol (last report in this block)
+ERROR:HDLParsers:164 - "C:/Arquitectura/CU_module.vhd" Line 60. parse error, unexpected STRING_LITERAL, expecting SEMICOLON
+ERROR:HDLParsers:812 - "C:/Arquitectura/CU_module.vhd" Line 60. A value is missing in case.
 
 
 Total REAL time to Xst completion: 0.00 secs
@@ -29,7 +34,7 @@ Total CPU time to Xst completion: 0.13 secs
 
 Total memory usage is 156580 kilobytes
 
-Number of errors   :    0 (   0 filtered)
-Number of warnings :    1 (   0 filtered)
+Number of errors   :    4 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

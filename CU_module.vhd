@@ -25,6 +25,13 @@ process(clkFPGA, icc, Cond)
 begin
 
 	if(rising_edge(clkFPGA))then 
+		PCsource <= "11";--defaults
+		RFsource <= "01";
+		wren <= '1';
+		RdEnMem <= '0';
+		WrEnMem <= '0';
+		RFdest <= '0';
+		
 		if(OP = "10")then
 			case OP3 is
 			
@@ -56,6 +63,12 @@ begin
 				when "100101" => ALUOP <= x"14"; --SLL
 				when "100110" => ALUOP <= x"15";	--SRL
 				when "100111" => ALUOP <= x"16"; --SRA
+				
+				when "111000" => 
+					ALUOP <= x"17";
+					RFsource <= "10";--selecciona PC como datatoreg
+					PCsource <= "00";--operacion de la alu
+					RFdest <= '0';--seleccion nRD
 					
 				when others => ALUOP <= x"00";
 			end case;
@@ -63,32 +76,34 @@ begin
 			if(OP = "11")then
 				case OP3 is
 					
-					when "001001" => ALUOP <= x"17"; --LDSB
-					when "001010" => ALUOP <= x"18"; --LDSH
-					when "000001" => ALUOP <= x"19";	--LDUB
-					when "000010" => ALUOP <= x"1A";	--LDUH
-					when "000000" => ALUOP <= x"1B"; --LD
-					when "000011" => ALUOP <= x"1C"; --LDD
+					--when "001001" => ALUOP <= x"17"; --LDSB
+					--when "001010" => ALUOP <= x"18"; --LDSH
+					--when "000001" => ALUOP <= x"19";	--LDUB
+					--when "000010" => ALUOP <= x"1A";	--LDUH
+					--when "000000" => ALUOP <= x"1B"; --LD
+					--when "000011" => ALUOP <= x"1C"; --LDD
 					
-					when "100000" => ALUOP <= x"1D"; --LDF
-					when "100011" => ALUOP <= x"1E"; --LDDF
-					when "100001" => ALUOP <= x"1F";	--LDFSR
+					--when "100000" => ALUOP <= x"1D"; --LDF
+					--when "100011" => ALUOP <= x"1E"; --LDDF
+					--when "100001" => ALUOP <= x"1F";	--LDFSR
 					
-					when "000101" => ALUOP <= x"20";	--STB
-					when "000110" => ALUOP <= x"21";	--STH
-					when "000100" => ALUOP <= x"22"; --ST
-					when "000111" => ALUOP <= x"23"; --STD
+					--when "000101" => ALUOP <= x"20";	--STB
+					--when "000110" => ALUOP <= x"21";	--STH
+					--when "000100" => ALUOP <= x"22"; --ST
+					--when "000111" => ALUOP <= x"23"; --STD
 					
-					when "100100" => ALUOP <= x"24";	--STF
-					when "100111" => ALUOP <= x"25";	--STDF
-					when "100101" => ALUOP <= x"26"; --STFSR
+					--when "100100" => ALUOP <= x"24";	--STF
+					--when "100111" => ALUOP <= x"25";	--STDF
+					--when "100101" => ALUOP <= x"26"; --STFSR
 					
-					when "110100" => ALUOP <= x"27";	--STC
-					when "110111" => ALUOP <= x"28";	--STDC
-					when "110101" => ALUOP <= x"29"; --STCSR
+					--when "110100" => ALUOP <= x"27";	--STC
+					--when "110111" => ALUOP <= x"28";	--STDC
+					--when "110101" => ALUOP <= x"29"; --STCSR
 					
-					when "111100" => ALUOP <= x"2A"; --SAVE
-					when "111101" => ALUOP <= x"2B";--restore
+					--when "111100" => ALUOP <= x"2A"; --SAVE
+					--when "111101" => ALUOP <= x"2B";--restore
+					
+					
 					
 					when others => ALUOP <= x"00";
 				end case;

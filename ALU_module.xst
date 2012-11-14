@@ -1,5 +1,5 @@
 set -tmpdir "C:/Arquitectura/xst/projnav.tmp"
 set -xsthdpdir "C:/Arquitectura/xst"
 elaborate
--ifn RegisterFile_module.prj
+-ifn ALU_module.prj
 -ifmt mixed

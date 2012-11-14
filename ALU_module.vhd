@@ -1,6 +1,8 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-
+use IEEE.NUMERIC_STD.ALL;
+use IEEE.numeric_bit.all;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
 entity ALU_module is
     Port ( ALUOP : in  STD_LOGIC_VECTOR (7 downto 0);
            Carry : in  STD_LOGIC;
@@ -18,17 +20,17 @@ process(ALUOP)
 begin
 
 	case ALUOP is
-		when "0000000" =>
+		when x"01" =>
 			dataOut <= OP1 + OP2;
-		when "0000001" =>
+		when x"02" =>
 			dataOut <= OP1 + OP2;
-		when "0000010"	=>
+		when x"03"	=>
 			dataOut <= OP1 + OP2 + Carry;
-		when "0000011"	=>
+		when x"04"	=>
 			dataOut <= OP1 - OP2;
-		when "0000100"	=>
+		when x"05"	=>
 			dataOut <= OP1 - OP2;
-		when "0000101"	=>
+		when x"06"	=>
 			dataOut <= OP1 - OP2 + Carry;	
 		when others =>
 			dataOut <= OP1;

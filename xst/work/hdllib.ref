@@ -1,10 +1,12 @@
 EN pc_module NULL C:/Users/usuariomac/Core_iDeivid/PC_module.vhd sub00/vhpl00 1352129561
-EN registerfile_module NULL C:/Users/usuariomac/Core_iDeivid/RegisterFile_module.vhd sub00/vhpl04 1352135922
+EN registerfile_module NULL C:/Arquitectura/RegisterFile_module.vhd sub00/vhpl04 1352908671
 EN instmemory_module NULL C:/Users/usuariomac/Core_iDeivid/InstMemory_module.vhd sub00/vhpl02 1352131848
 AR cu_module behavioral C:/Users/usuariomac/Core_iDeivid/CU_module.vhd sub00/vhpl07 1352386134
-AR registerfile_module behavioral C:/Users/usuariomac/Core_iDeivid/RegisterFile_module.vhd sub00/vhpl05 1352135923
+AR registerfile_module behavioral C:/Arquitectura/RegisterFile_module.vhd sub00/vhpl05 1352908672
 AR instmemory_module behavioral C:/Users/usuariomac/Core_iDeivid/InstMemory_module.vhd sub00/vhpl03 1352131849
+AR alu_module behavioral C:/Arquitectura/ALU_module.vhd sub00/vhpl11 1352909720
 AR mux2_module behavioral C:/Users/usuariomac/Core_iDeivid/MUX2_module.vhd sub00/vhpl09 1352611898
-EN cu_module NULL C:/Users/usuariomac/Core_iDeivid/CU_module.vhd sub00/vhpl06 1352386133
+EN cu_module NULL C:/Arquitectura/CU_module.vhd sub00/vhpl06 1352909742
 EN mux2_module NULL C:/Users/usuariomac/Core_iDeivid/MUX2_module.vhd sub00/vhpl08 1352611897
+EN alu_module NULL C:/Arquitectura/ALU_module.vhd sub00/vhpl10 1352909719
 AR pc_module behavioral C:/Users/usuariomac/Core_iDeivid/PC_module.vhd sub00/vhpl01 1352129562

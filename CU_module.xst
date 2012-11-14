@@ -1,5 +1,5 @@
-set -tmpdir "C:/Users/usuariomac/Core_iDeivid/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/usuariomac/Core_iDeivid/xst"
+set -tmpdir "C:/Arquitectura/xst/projnav.tmp"
+set -xsthdpdir "C:/Arquitectura/xst"
 elaborate
 -ifn CU_module.prj
 -ifmt mixed
